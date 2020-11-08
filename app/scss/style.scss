@@ -449,10 +449,12 @@
         background-repeat: no-repeat;
         background-position: right center;
     background-size: contain;
-
         .descr__head{
             position: relative;
+            padding-right: 68px;
+            &.descr__head-sleep{
             padding-right: 215px;
+            }
             img{
                 position: absolute;
                 right: 0;
@@ -462,10 +464,6 @@
                 position: absolute;
                 right: 0;
                 top: 0;
-                li{
-                    margin-left: -25px;
-                    display: inline-block;
-                }
                 img{
                     position: static;
                 }
