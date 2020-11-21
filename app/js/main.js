@@ -15,11 +15,19 @@ $('.slider-dotshead').slick({
 });
 
 $('.surf-slider').slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    prevArrow: '<img class="slider-arrow slider-arrow__left" src="images/arrow-left.svg" alt="">',
-    nextArrow: '<img class="slider-arrow slider-arrow__right" src="images/arrow-right.svg" alt="">',
-    asNavFor: '.slider-map',
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  prevArrow: '<img class="slider-arrow slider-arrow__left" src="images/arrow-left.svg" alt="">',
+  nextArrow: '<img class="slider-arrow slider-arrow__right" src="images/arrow-right.svg" alt="">',
+  asNavFor: '.slider-map',
+  responsive:[
+    {
+      breakpoint: 1210,
+      settings: {
+        slidesToShow: 3,
+      }
+    },
+  ]
 });
 
 $('.slider-map').slick({
@@ -82,6 +90,9 @@ $('.surfboard-box__circle').on('click', function(){
   $(this).toggleClass('active')
 });
 
+$('.menu-btn').on('click', function(){
+  $('.menu').toggleClass('active');
+});
 
   
 });
