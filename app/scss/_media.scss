@@ -88,6 +88,15 @@
     }
 }
 
+@media (max-width: 1287px) {
+    .slider-map .slider-slick {
+        overflow: hidden;
+    }
+    .slider-dots__circle {
+        box-shadow: none;
+    }
+}
+
 @media (max-width: 1250px) {
     .slider-map {
         min-width: 1000px;
